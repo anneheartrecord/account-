@@ -15,6 +15,7 @@ func init() {
 }
 
 func main() {
+	// 运行grpc server 监听在9095
 	ip := flag.String("ip", "127.0.0.1", "请输入ip")
 	port := flag.Int64("port", 9095, "请输入端port")
 	flag.Parse()

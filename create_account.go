@@ -1,6 +1,7 @@
 package main
 
 import (
+	"account/biz"
 	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
@@ -35,7 +36,7 @@ func main() {
 	// 设置随机数种子
 	rand.Seed(time.Now().UnixNano())
 
-	// 生成随机数据并插入到数据库中
+	// 生成一万条随机数据并插入到数据库中
 	for i := 0; i < 10000; i++ {
 		user := generateUser()
 		insertUser(db, user)
@@ -47,6 +48,10 @@ func generateUser() User {
 	mobile := "1" + strconv.Itoa(rand.Intn(899999999)+100000000)
 	// 生成随机password
 	password := randomString(8)
+	hashedPwd, err := biz.GetMd5(password)
+	if err != nil {
+		panic(err)
+	}
 	// 生成随机nick_name
 	nickName := randomString(8)
 	// 生成随机gender
@@ -54,11 +59,11 @@ func generateUser() User {
 	if rand.Intn(2) == 1 {
 		gender = "female"
 	}
-	return User{Mobile: mobile, Password: password, NickName: nickName, Gender: gender}
+	return User{Mobile: mobile, Password: hashedPwd, NickName: nickName, Gender: gender}
 }
 
 func insertUser(db *sql.DB, user User) {
-	// 插入数据到数据库中
+	// 插入数据到数据库中 这里可以用values 然后传一个slice 应该会比一条条插快不少
 	stmt, err := db.Prepare("INSERT INTO account (mobile, password, nick_name, gender, created_at, updated_at ) VALUES (?, ?, ?, ?, ?, ?)")
 	if err != nil {
 		panic(err)

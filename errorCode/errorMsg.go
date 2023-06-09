@@ -12,6 +12,10 @@ const (
 )
 
 const (
-	GrpcWrong         = "调用GRPC失败"
-	GetAccountListErr = "获取用户列表失败"
+	GrpcWrong             = "调用GRPC失败"
+	GetAccountListErr     = "获取用户列表失败"
+	GetAccountByMobileErr = "根据手机号获取用户失败"
+	GetAccountByIDErr     = "根据ID获取用户失败"
+	AddAccountErr         = "添加用户失败"
+	UpdateAccountErr      = "更新用户失败"
 )

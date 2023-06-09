@@ -12,3 +12,18 @@
 {"level":"info","ts":1686221973.9360545,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
 {"level":"info","ts":1686221974.6192565,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
 {"level":"info","ts":1686221978.3968985,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686280533.728097,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686280537.5870547,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686280543.6462212,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686281422.3077579,"caller":"handler/AccountHandler.go:71","msg":"AccountListHandler success"}
+{"level":"info","ts":1686281423.0705361,"caller":"handler/AccountHandler.go:71","msg":"AccountListHandler success"}
+{"level":"warn","ts":1686285029.6831546,"caller":"handler/AccountHandler.go:160","msg":"add_account_failed,err_rpc error: code = Unknown desc = md5加密失败"}
+{"level":"warn","ts":1686285075.6818817,"caller":"handler/AccountHandler.go:160","msg":"add_account_failed,err_rpc error: code = Unknown desc = md5加密失败"}
+{"level":"warn","ts":1686285193.1446097,"caller":"handler/AccountHandler.go:160","msg":"add_account_failed,err_rpc error: code = Unknown desc = md5加密失败"}
+{"level":"warn","ts":1686285193.789868,"caller":"handler/AccountHandler.go:160","msg":"add_account_failed,err_rpc error: code = Unknown desc = md5加密失败"}
+{"level":"warn","ts":1686285215.3571434,"caller":"handler/AccountHandler.go:160","msg":"add_account_failed,err_rpc error: code = Unknown desc = md5加密失败"}
+{"level":"warn","ts":1686285260.5999818,"caller":"handler/AccountHandler.go:191","msg":"update_account_failed,err_rpc error: code = Unknown desc = 账户不存在"}
+{"level":"warn","ts":1686285261.237984,"caller":"handler/AccountHandler.go:191","msg":"update_account_failed,err_rpc error: code = Unknown desc = 账户不存在"}
+{"level":"warn","ts":1686285288.2631733,"caller":"handler/AccountHandler.go:191","msg":"update_account_failed,err_rpc error: code = Unknown desc = 账户不存在"}
+{"level":"warn","ts":1686285288.9680932,"caller":"handler/AccountHandler.go:191","msg":"update_account_failed,err_rpc error: code = Unknown desc = 账户不存在"}
+{"level":"warn","ts":1686285304.8205254,"caller":"handler/AccountHandler.go:191","msg":"update_account_failed,err_rpc error: code = Unknown desc = 账户不存在"}
