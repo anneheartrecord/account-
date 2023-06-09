@@ -1,0 +1,2 @@
+{"level":"warn","ts":1686220445.5854168,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686220621.908651,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}

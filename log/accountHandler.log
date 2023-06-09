@@ -1,0 +1,14 @@
+{"level":"warn","ts":1686220681.8747237,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686220773.5434248,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686220776.4481633,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686220983.9770997,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686220984.707517,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686221093.376109,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686221192.6916654,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: http2: frame too large\""}
+{"level":"warn","ts":1686221584.7738361,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:9095: connectex: No connection could be made because the target machine actively refused it.\""}
+{"level":"warn","ts":1686221904.163479,"caller":"handler/AccountHandler.go:55","msg":"get_account_list_failed,err_rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:9095: connectex: No connection could be made because the target machine actively refused it.\""}
+{"level":"info","ts":1686221961.000361,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686221972.8051474,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686221973.9360545,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686221974.6192565,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}
+{"level":"info","ts":1686221978.3968985,"caller":"handler/AccountHandler.go:74","msg":"AccountListHandler success"}

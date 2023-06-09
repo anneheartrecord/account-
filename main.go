@@ -1,30 +1,23 @@
 package main
 
 import (
-	"account/biz"
-	"account/internal"
-	pb "account/proto"
+	"account/handler"
+	"account/log"
 	"flag"
 	"fmt"
-	"google.golang.org/grpc"
-	"net"
+	"github.com/gin-gonic/gin"
 )
-
-func init() {
-	internal.InitDB()
-}
 
 func main() {
 	ip := flag.String("ip", "127.0.0.1", "请输入ip")
 	port := flag.Int64("port", 9999, "请输入端port")
 	flag.Parse()
 	addr := fmt.Sprintf("%s:%d", *ip, *port)
-	server := grpc.NewServer()
-	pb.RegisterAccountServiceServer(server, &biz.AccountServer{})
-	listen, err := net.Listen("tcp", addr)
-	if err != nil {
-		panic(err)
+	log.InitLogger()
+	r := gin.Default()
+	accountGroup := r.Group("/v1/account")
+	{
+		accountGroup.GET("/list", handler.AccountListHandler)
 	}
-	err = server.Serve(listen)
-
+	r.Run(addr)
 }
